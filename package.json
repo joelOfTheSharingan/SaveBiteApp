@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://<your-username>.github.io/<your-repo-name>",
+  "homepage": "https://joelOfTheSharingan.github.io/SaveBiteApp",
   "browserslist": {
     "production": [
       ">0.2%",
