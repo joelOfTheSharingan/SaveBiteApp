@@ -22,14 +22,11 @@ const HomePage = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
       {/* Navbar */}
       <nav className="bg-white shadow-md p-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <img src={logo} alt="SaveBite Logo" className="w-10 h-10" />
-          <h1 className="text-green-700 text-2xl font-bold">Save Bite</h1>
-        </div>
+        
         {userEmail ? (
           <Link to="/dashboard" className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">
-            Log Out
-          </Link>
+          Log Out
+        </Link>
         ) : (
           <div className="space-x-4">
             <Link to="/login" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
