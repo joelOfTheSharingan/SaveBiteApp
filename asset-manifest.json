@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SaveBiteApp/static/css/main.0a9d3835.css",
+    "main.js": "/SaveBiteApp/static/js/main.1071f66f.js",
+    "static/media/hero-bg.jpg": "/SaveBiteApp/static/media/hero-bg.810f38c6fcf5bbd9bce1.jpg",
+    "static/media/logo.png": "/SaveBiteApp/static/media/logo.aed36353b17dfa7c7dc9.png",
+    "index.html": "/SaveBiteApp/index.html",
+    "main.0a9d3835.css.map": "/SaveBiteApp/static/css/main.0a9d3835.css.map",
+    "main.1071f66f.js.map": "/SaveBiteApp/static/js/main.1071f66f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a9d3835.css",
+    "static/js/main.1071f66f.js"
+  ]
+}
