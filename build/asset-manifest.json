@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9623540a.css",
-    "main.js": "/static/js/main.a40e9a63.js",
-    "static/media/logo.png": "/static/media/logo.aed36353b17dfa7c7dc9.png",
-    "index.html": "/index.html",
-    "main.9623540a.css.map": "/static/css/main.9623540a.css.map",
-    "main.a40e9a63.js.map": "/static/js/main.a40e9a63.js.map"
+    "main.css": "/SaveBiteApp/static/css/main.9623540a.css",
+    "main.js": "/SaveBiteApp/static/js/main.83ced670.js",
+    "static/media/logo.png": "/SaveBiteApp/static/media/logo.aed36353b17dfa7c7dc9.png",
+    "static/media/hero-bg.jpg": "/SaveBiteApp/static/media/hero-bg.3eade046ba25512e5cd1.jpg",
+    "index.html": "/SaveBiteApp/index.html",
+    "main.9623540a.css.map": "/SaveBiteApp/static/css/main.9623540a.css.map",
+    "main.83ced670.js.map": "/SaveBiteApp/static/js/main.83ced670.js.map"
   },
   "entrypoints": [
     "static/css/main.9623540a.css",
-    "static/js/main.a40e9a63.js"
+    "static/js/main.83ced670.js"
   ]
 }
