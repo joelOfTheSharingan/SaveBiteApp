@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import { Utensils, Users, Leaf } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import heroBg from '../assets/hero-bg.jpg'; // Import hero background image
+import logo from '../assets/logo.png'; // Import logo image
+
 const HomePage = () => {
   const [userEmail, setUserEmail] = useState<string | null>(null);
 
@@ -20,7 +23,7 @@ const HomePage = () => {
       {/* Navbar */}
       <nav className="bg-white shadow-md p-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img src="/assets/logo.png" alt="SaveBite Logo" className="w-10 h-10" />
+          <img src={logo} alt="SaveBite Logo" className="w-10 h-10" />
           <h1 className="text-green-700 text-2xl font-bold">Save Bite</h1>
         </div>
         {userEmail ? (
@@ -29,10 +32,10 @@ const HomePage = () => {
           </Link>
         ) : (
           <div className="space-x-4">
-            <Link to="/loginPage" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
+            <Link to="/login" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
               Log In
             </Link>
-            <Link to="/signUpPage" className="bg-white border border-green-500 text-green-700 px-4 py-2 rounded-lg hover:bg-green-100">
+            <Link to="/signup" className="bg-white border border-green-500 text-green-700 px-4 py-2 rounded-lg hover:bg-green-100">
               Sign Up
             </Link>
           </div>
@@ -41,7 +44,10 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <header className="relative flex items-center justify-center h-[400px] md:h-[500px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-green-800 opacity-70"></div>
         
         <div className="relative z-10 text-center text-white p-6 max-w-xl mx-auto">
@@ -67,10 +73,10 @@ const HomePage = () => {
             </Link>
           ) : (
             <div className="space-x-4">
-              <Link to="/loginPage" className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg">
+              <Link to="/login" className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg">
                 Log In
               </Link>
-              <Link to="/signUpPage" className="bg-white text-green-700 border border-green-500 px-6 py-3 rounded-lg hover:bg-green-100">
+              <Link to="/signup" className="bg-white text-green-700 border border-green-500 px-6 py-3 rounded-lg hover:bg-green-100">
                 Sign Up
               </Link>
             </div>
@@ -110,6 +116,6 @@ const HomePage = () => {
       </footer>
     </div>
   );
-};1
+};
 
 export default HomePage;

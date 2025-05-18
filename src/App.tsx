@@ -11,7 +11,7 @@ import ViewRequestsPage from './pages/ViewRequestsPage.tsx';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/SaveBiteApp">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
