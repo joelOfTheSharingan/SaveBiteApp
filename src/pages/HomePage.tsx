@@ -6,7 +6,6 @@ import { Utensils, Users, Leaf } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import heroBg from '../assets/hero-bg.jpg'; // Import hero background image
-import logo from '../assets/logo.png'; // Import logo image
 
 const HomePage = () => {
   const [userEmail, setUserEmail] = useState<string | null>(null);
@@ -20,25 +19,6 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
-      {/* Navbar */}
-      <nav className="bg-white shadow-md p-4 flex justify-between items-center">
-        
-        {userEmail ? (
-          <Link to="/dashboard" className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">
-          Log Out
-        </Link>
-        ) : (
-          <div className="space-x-4">
-            <Link to="/login" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
-              Log In
-            </Link>
-            <Link to="/signup" className="bg-white border border-green-500 text-green-700 px-4 py-2 rounded-lg hover:bg-green-100">
-              Sign Up
-            </Link>
-          </div>
-        )}
-      </nav>
-
       {/* Hero Section */}
       <header className="relative flex items-center justify-center h-[400px] md:h-[500px] overflow-hidden">
         <div
