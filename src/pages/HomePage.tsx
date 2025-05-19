@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { auth } from '../firebase.ts';
+import { auth } from '../firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import { Utensils, Users, Leaf } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-import heroBg from '../assets/hero-bg.jpg'; // Import hero background image
-import logo from '../assets/logo.png'; // Import logo image
+import heroBg from '../assets/hero-bg.jpg';
+import logo from '../assets/logo.png';
 
 const HomePage = () => {
   const [userEmail, setUserEmail] = useState<string | null>(null);
@@ -22,11 +22,10 @@ const HomePage = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
       {/* Navbar */}
       <nav className="bg-white shadow-md p-4 flex justify-between items-center">
-        
         {userEmail ? (
           <Link to="/dashboard" className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">
-          Log Out
-        </Link>
+            Log Out
+          </Link>
         ) : (
           <div className="space-x-4">
             <Link to="/login" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
@@ -46,7 +45,7 @@ const HomePage = () => {
           style={{ backgroundImage: `url(${heroBg})` }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-green-800 opacity-70"></div>
-        
+
         <div className="relative z-10 text-center text-white p-6 max-w-xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -105,6 +104,16 @@ const HomePage = () => {
             <p className="text-lg text-gray-700">Reduce food waste and support sustainability.</p>
           </motion.div>
         </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="bg-gray-100 py-10 text-center">
+        <h2 className="text-3xl font-bold text-green-700 mb-4">About SaveBite</h2>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          SaveBite is a platform dedicated to reducing food waste by connecting event managers with NGOs and charities. 
+          Our mission is to ensure that surplus food is redirected to those in need, promoting sustainability and 
+          reducing food insecurity in our communities.
+        </p>
       </section>
 
       {/* Footer */}
