@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase.ts';
-import { useNavigate } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { doc, setDoc, getFirestore } from 'firebase/firestore';
 
 const SignUpPage = () => {
@@ -77,7 +77,7 @@ const SignUpPage = () => {
 
         <p className="mt-4 text-sm text-center text-gray-600">
           Already have an account?{' '}
-          <a href="/login" className="text-green-600 hover:underline">Log In</a>
+          <Link href="/login" className="text-green-600 hover:underline">Log In</link>
         </p>
       </div>
     </div>
