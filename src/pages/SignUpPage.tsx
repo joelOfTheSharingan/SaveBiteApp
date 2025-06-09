@@ -77,7 +77,7 @@ const SignUpPage = () => {
 
         <p className="mt-4 text-sm text-center text-gray-600">
           Already have an account?{' '}
-          <a href="/SaveBiteApp/login" className="text-green-600 hover:underline">Log In</a>
+          <a href="/login" className="text-green-600 hover:underline">Log In</a>
         </p>
       </div>
     </div>
